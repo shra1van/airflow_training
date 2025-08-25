@@ -39,7 +39,7 @@ def fetch_and_loop_weather_data():
             max_str = str(max_temp) if max_temp is not None else "None"
             min_str = str(min_temp) if min_temp is not None else "None"
             print(f"{single_date} {max_str} {min_str}")
-            #print(f"{single_date:<12} {max_str:<15} {min_str:<15}")
+            print(f"{single_date:<12} {max_str:<15} {min_str:<15}")
         max_temp_total=[x for x in max_temps if x is not None]
         if max_temp_total:
             highest_max_temp=max(max_temp_total)
